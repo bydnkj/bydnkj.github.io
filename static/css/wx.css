@@ -1,0 +1,69 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+body{
+    /* 设置body高度为100%窗口高度 */
+    height:100vh;
+    /* 弹性盒子模型 */
+    display: flex;
+    /* 限免两个属性是让body里的子类居中 */
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #fff;
+    /* 盒子阴影 */
+    box-shadow: 15px 15px 10px rgba(33,45,58,0.3);
+    overflow: hidden;
+    position:relative;
+}
+.tx {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.name {
+    position: absolute;
+    top: 35px;
+    left: 135px;
+    font-size: 20px;
+}
+.qr {
+    position: absolute;
+    top: 125px;
+    left: 50px;
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+.name1 {
+    position: absolute;
+    top: 400px;
+    left: 105px;
+    display:flex ;
+    font-size: 12px;
+    color: #636363;
+}
+.txt {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    display: flex;
+    font-size: 13px;
+    color: #636363;
+}
