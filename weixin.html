@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+      <!-- 此源码来自网络，由 云逸数字工作室 www.uool.cn 整理收集，版权归原作者所有！！！-->
+  <title>个人资料</title> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"> 
+  <link rel="stylesheet" href="css/weui.css"> 
+  <link rel="stylesheet" href="css/weuix.css"> 
+  <script type="text/javascript" src="js/jquery.min_724b6f3ffd284020ba1a379169ce16d8.js"></script> 
+  <script src="js/zepto.min.js"></script> 
+  <script src="js/zepto.weui.js"></script> 
+ </head> 
+ <body style="background: #f7f7f7;" ontouchstart=""> 
+  <style type="text/css">.weui-cells:before{border-top:0px;}</style> 
+  <div class="weui-cells" style="margin-top: 0px;"> 
+   <div class="weui-cell"> 
+    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;padding-top: 10px;padding-bottom: 12px;"> 
+     <img src="./images/sgdn.png" style="width: 70px;display: block;border-radius:.4em;"> 
+    </div> 
+    <div class="weui-cell__bd"> 
+     <p><b>云逸靓号</b></p> 
+     <p style="font-size: 13px;color: #888888;">微信号:bydnkj</p> 
+    </div> 
+   </div> 
+   <div class="weui-cell weui-cell_access"> 
+    <div class="weui-cell__bd"> 
+     <a href="https://bydnkj.github.io" target="_blank" style="display:block;"> <span style="vertical-align: middle"> 个人网站</span> </a> 
+    </div> 
+    <div class="weui-cell__ft"></div> 
+   </div> 
+   <div class="weui-cell weui-cell_access"> 
+    <div class="weui-cell__bd"> 
+     <span style="vertical-align: middle">备注和标签</span> 
+    </div> 
+    <div class="weui-cell__ft"></div> 
+   </div> 
+   <div class="weui-cell weui-cell_access"> 
+    <div class="weui-cell__bd"> 
+     <span style="vertical-align: middle">朋友权限</span> 
+    </div> 
+    <div class="weui-cell__ft"></div> 
+   </div> 
+   <div class="weui-cell weui-cell_access"> 
+    <div class="weui-cell__bd"> 
+     <span style="vertical-align: middle">更多信息</span> 
+    </div> 
+    <div class="weui-cell__ft"></div> 
+   </div> 
+   <div style="height: 11px;background: #f7f7f7;"></div> 
+   <div class="weui-cell weui-cell_access" onclick="copyUrl('bydnkj')" type="button"> 
+    <div class="weui-cell__bd" style="text-align: center;" id="showToast"> 
+     <span style="vertical-align: middle">
+      <!--<img src="img/wx.jpeg" style="width: 15px;border-right: 3px;">--><font color="#507fcc"><b>&nbsp;添加到通讯录</b></font></span>
+     <b> </b>
+    </div>
+    <b> </b>
+   </div>
+<!--   <b> 
+   <div style="height: 38px;background: #f7f7f7;"></div> 
+    <div class="weui-cell weui-cell_access" onclick="copyUrl('bydnkj')"> 
+     <div class="weui-cell__bd" style="text-align: center;"> 
+      <span style="vertical-align: middle">&nbsp;热门推荐</span> 
+     </div> 
+    </div> </b>
+  </div>
+  <b> <style type="text/css">.weui-grid:before{border:0px;}.weui-grid:after{border: 0px;}.weui-grid__icon {
+    width: 69px;
+    height: 69px;
+}.weui-grid__icon img{border-radius: .4em}.weui-cell__bd{font-size:18px;line-height: 1.97058824;}</style> </b>
+  <div class="weui-grids">
+   <b> 
+   	<a href="https://dy.kjwifi.com" class="weui-grid js_grid" onclick="copyUrl('微信1')"> 
+     <div class="weui-grid__icon" id="showToast" onclick="copyUrl3()" type="button"> 
+      <img src="images/2.png" border-right:="" .4em=""> 
+     </div> <p class="weui-grid__label">抖音极速版</p> </a> 
+     
+     <a href="https://ks.kjwifi.com" class="weui-grid js_grid" onclick="copyUrl('微信号2')"> 
+     <div class="weui-grid__icon" id="showToast" onclick="copyUrl4()" type="button"> 
+      <img src="images/3.png"> 
+     </div> <p class="weui-grid__label">快手极速版</p> </a> 
+     
+     <a href="https://zfbhb.kjwifi.com" class="weui-grid js_grid" onclick="copyUrl('微信号3')"> 
+     <div class="weui-grid__icon" id="showToast" onclick="copyUrl5()" type="button"> 
+      <img src="images/zfb.png"> 
+     </div> <p class="weui-grid__label">领支付宝红包</p> </a> 
+   </b> 
+  </div>
+  <br> 
+  <br> 
+<div class="nav_container" style="text-align:center;color:#888888;display: block;">
+      <div class="footer"> --><!-- 底部版权 -->    <!-- 此源码来自网络，由 云逸数字工作室 www.uool.cn 整理收集，版权归原作者所有！！！-->
+          <!-- <br>©Copyright 云逸数字工作室 <br><a href="http://beian.miit.gov.cn/" target="_blank">正在备案在路上奔波</a>
+				<br>
+			</div>
+     </div> -->
+  <script type="text/javascript">
+          $(function () {
+              $(document).on('click', '#wx_url', function () {
+                  var wxurl = $(this).attr('data-url');
+                  window.location.href = wxurl;
+              });
+          });
+            function copyUrl(wxh="")
+            {
+                $.toast("复制 微信号 成功，请在微信里搜索 bydnkj。", function() {
+                    var oInput = document.createElement('input');
+                oInput.value = wxh;
+                document.body.appendChild(oInput);
+                oInput.select(); // 选择对象
+                document.execCommand("Copy"); // 执行浏览器复制命令
+                oInput.className = 'oInput';
+                oInput.style.display='none';
+               
+                window.location.href="weixin://";//打开微信
+                });
+            }
+      </script> 
+    <!-- 此源码来自网络，由 云逸数字工作室 www.uool.cn 整理收集，版权归原作者所有！！！-->
+</body></html>
